@@ -1,7 +1,5 @@
 /*Shared style*/
-<style>
   @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700;800&family=Work+Sans:wght@300;900&display=swap');
-</style>
 
 *{
 font-family: 'Open Sans', sans-serif;
@@ -216,17 +214,82 @@ color: #0B0223;
 font-size: 20px;
 font-weight: 600;
 }
-.container4{
+.container4 {
   margin-top: 30px;
-  display: grid;
-  grid-template-columns: repeat(5, 2fr);
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   text-align: center;
 }
+
 .babul{
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
   width: 243px;
-  height: 80px
+  height: 80px;
   border-radius: 50px;
-  background: #FFF;
+  background:white;
 }
+.babul:hover{
+  border: 1px solid red;
+}
+.babul p:hover{
+  color: #8758F1;
+}
+.babul-img{
+width:45px;
+height: 45px;
+border-radius: 50px;
+background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+
+/*footer section styles*/
+footer{
+  margin-top: 30px;
+  background: #0B0223;
+}
+.footer-info{
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  color: white;
+  justify-content: center;
+}
+.footer-img{
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.footer-logo{
+  color: white;
+}
+.icon{
+width: 30px;
+height: 30px;
+}
+.footer-polici{
+  color: rgba(255, 255, 255, 0.60);
+  padding-top: 20px;
+}
+.copiright{
+text-align: center;
+color: rgba(255, 255, 255, 0.60);
+padding-bottom: 20px;
+}
+
+/*mobile device responsive*/
+@media screen and (max-width: 576px) {
+.nav-container{
+  flex-direction: column;
+}
+.follow{
+ 
+} 
+.right-container{
+  display:column;
+} 
+}
+
